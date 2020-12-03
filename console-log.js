@@ -34,6 +34,4 @@ console.timeEnd('looper')
 
 const deleteMe = () => console.trace('bye bye database')
 
-deleteMe()
-deleteMe()
-
+deleteMe();
