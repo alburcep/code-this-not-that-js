@@ -27,6 +27,9 @@ const sumRandomAsyncNums = () => {
         });
 }
 
+const random = () => {
+    return Promise.resolve(Math.random())
+}
 
 'Good Promise Code ✅'
 
@@ -37,7 +40,8 @@ const sumRandomAsyncNums = async() => {
     const third = await random();
 
     console.log(`Result ${first + second + third}`);
-
+    
+    //opcional, conditional statement 
     if (await random()) {
         // do something
         console.log('Cargando...');
