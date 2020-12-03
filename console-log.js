@@ -35,3 +35,6 @@ console.timeEnd('looper')
 const deleteMe = () => console.trace('bye bye database')
 
 deleteMe();
+
+//Más información y contenido para debugar 
+https://blog.bitsrc.io/javascript-debugging-best-practices-e28a09b4528a
