@@ -33,6 +33,21 @@ const random = () => {
 
 'Good Promise Code ✅'
 
+var sumRandomAsyncNums = async() => {
+
+    const first = await random();
+    const second = await random();
+    const third = await random();
+
+    console.log(`Result ${first }`);
+    console.log(`Result ${second }`);
+    console.log(`Result ${third}`);
+}
+sumRandomAsyncNums();
+
+
+'Better Promise Code ✅✅'
+
 const sumRandomAsyncNums = async() => {
 
     const first = await random();
@@ -41,12 +56,6 @@ const sumRandomAsyncNums = async() => {
 
     console.log(`Result ${first + second + third}`);
     
-    //opcional, conditional statement 
-    if (await random()) {
-        // do something
-        console.log('Cargando...');
-    }
-
     const randos = Promise.all([
         random(), 
         random(),
@@ -56,10 +65,12 @@ const sumRandomAsyncNums = async() => {
     for(const r of await randos) {
         console.log(r)
     }
-
-
+    
+    //opcional, conditional statement 
+    if (await random()) {
+        // do something
+        console.log('Cargando...');
+    }
 }
 
-
-
-sumRandomAsyncNums()
+sumRandomAsyncNums();
