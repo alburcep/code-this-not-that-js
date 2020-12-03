@@ -40,6 +40,7 @@ const sumRandomAsyncNums = async() => {
 
     if (await random()) {
         // do something
+        console.log('Cargando...');
     }
 
     const randos = Promise.all([
