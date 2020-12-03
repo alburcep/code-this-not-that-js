@@ -30,7 +30,7 @@ while (i < 1000000) { i ++ }
 
 console.timeEnd('looper')
 
-// // Stack Trace Logs
+//Stack Trace Logs - Saber donde hemos realizado una acción muy importante
 
 const deleteMe = () => console.trace('bye bye database')
 
